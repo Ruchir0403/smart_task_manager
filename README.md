@@ -38,4 +38,40 @@ This project solves the problem of manual task organization by using a "Smart Cl
 4. Start the server locally:
    ```bash
    npm start
-   
+
+## Mobile App (Flutter)
+1. Navigate to the app directory:
+   ```bash
+   cd mobile_app
+
+2. Install dependencies:
+   ```bash
+   flutter pub get
+
+3. Run the app (ensure an emulator is running or device is connected):
+   ```bash
+   flutter run
+
+## API Documentation
+GET /api/tasks
+Retrieve all tasks with optional filters.
+Query Parameters:
+* **search:** Search text in title or description.
+* **category:** Filter by category (e.g., 'finance', 'technical').
+* **priority:** Filter by priority ('high', 'medium', 'low').
+
+POST /api/tasks
+Create a new task. The system will auto-classify it upon creation.
+Body:
+   ```bash
+   {
+     "title": "Fix login bug",
+     "description": "Users getting 500 error",
+     "assigned_to": "Dev Team",
+     "due_date": "2025-12-31T00:00:00.000Z"
+   }
+
+
+
+
+
