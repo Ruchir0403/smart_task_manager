@@ -5,9 +5,11 @@ import '../models/task.dart';
 class ApiService {
   static String get baseUrl {
     if (kIsWeb) {
-      return 'http://localhost:3000/api/tasks';
+      // return 'http://localhost:3000/api/tasks';
+      return 'https://smart-task-manager-5zv5.onrender.com/api/tasks';
     } else {
-      return 'http://10.0.2.2:3000/api/tasks';
+      // return 'http://10.0.2.2:3000/api/tasks';
+      return 'https://smart-task-manager-5zv5.onrender.com/api/tasks';
     }
   }
 
