@@ -4,9 +4,9 @@ A comprehensive task management application that automatically classifies and pr
 
 ## 1. Project Overview
 This project solves the problem of manual task organization by using a "Smart Classification" engine. When a user creates a task (e.g., "Urgent meeting about budget"), the system automatically:
-* [cite_start]**Detects Category:** Assigns categories like 'Finance' or 'Scheduling' based on keywords [cite: 70-76].
-* [cite_start]**Assigns Priority:** Flags tasks as 'High' priority if urgent words are detected [cite: 79-81].
-* [cite_start]**Suggests Actions:** Provides actionable steps relevant to the task type [cite: 88-93].
+* **Detects Category:** Assigns categories like 'Finance' or 'Scheduling' based on keywords.
+* **Assigns Priority:** Flags tasks as 'High' priority if urgent words are detected.
+* **Suggests Actions:** Provides actionable steps relevant to the task type.
 
 [cite_start]The goal was to build a production-ready "Hybrid" application demonstrating clean architecture, real-time database persistence, and a responsive mobile UI [cite: 30-35].
 
@@ -71,7 +71,15 @@ Body:
      "due_date": "2025-12-31T00:00:00.000Z"
    }
 
-
-
-
-
+Response:
+   ```bash
+   {
+     "success": true,
+     "data": {
+       "id": "uuid...",
+       "category": "technical",
+       "priority": "high",
+       "suggested_actions": ["Diagnose issue", "Check resources"]
+       ...
+     }
+   }
